@@ -316,10 +316,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GAPEvaluation.Common\GAPEvaluation.Common.csproj">
-      <Project>{e83b6d11-58d8-4cb5-a470-c6eca7a7223b}</Project>
-      <Name>GAPEvaluation.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GAPEvaluation.Domain\GAPEvaluation.Domain.csproj">
       <Project>{2fb2fd08-cf7d-4863-9416-27d5f9a70539}</Project>
       <Name>GAPEvaluation.Domain</Name>

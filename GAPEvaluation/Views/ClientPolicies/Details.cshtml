@@ -1,0 +1,50 @@
+﻿@model GAPEvaluation.Domain.Models.ClientPolicy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClientPolicy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Client.IdNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.IdNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Policy.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Policy.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RiskType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RiskType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CoveragePct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoveragePct)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdClientPolicy }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

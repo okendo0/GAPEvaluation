@@ -54,19 +54,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Coverage.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\Policy.cs" />
+    <Compile Include="Models\ClientPolicy.cs" />
+    <Compile Include="Models\RiskType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GAPEvaluation.Common\GAPEvaluation.Common.csproj">
-      <Project>{e83b6d11-58d8-4cb5-a470-c6eca7a7223b}</Project>
-      <Name>GAPEvaluation.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

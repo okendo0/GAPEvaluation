@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
-using GAPEvaluation.Common.Models;
-using GAPEvaluation.Domain.Models;
-
-namespace GAPEvaluation.API.Controllers
+﻿namespace GAPEvaluation.API.Controllers
 {
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    using System.Linq;
+    using System.Net;
+    using System.Threading.Tasks;
+    using System.Web.Http;
+    using System.Web.Http.Description;
+    using GAPEvaluation.Domain.Models;
+
     public class PoliciesController : ApiController
     {
-        private DataContext db = new DataContext();
+        private Domain.Models.DataContext db = new Domain.Models.DataContext();
 
         // GET: api/Policies
         public IQueryable<Policy> GetPolicies()
