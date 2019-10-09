@@ -18,7 +18,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdClient, "IdClient", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Cliente", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("IdClient", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.IdClient, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdPolicy, "IdPolicy", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Tipo de Póliza", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("IdPolicy", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.IdPolicy, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdRiskType, "IdRiskType", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Tipo de Riesgo", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("IdRiskType", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.IdRiskType, "", new { @class = "text-danger" })
             </div>
         </div>
