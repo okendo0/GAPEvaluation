@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace GAPEvaluation.API.Areas.HelpPage.ModelDescriptions
+namespace GAPEvaluation.Api.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

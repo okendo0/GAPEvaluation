@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using GAPEvaluation.API.Areas.HelpPage.ModelDescriptions;
-using GAPEvaluation.API.Areas.HelpPage.Models;
+using GAPEvaluation.Api.Areas.HelpPage.ModelDescriptions;
+using GAPEvaluation.Api.Areas.HelpPage.Models;
 
-namespace GAPEvaluation.API.Areas.HelpPage
+namespace GAPEvaluation.Api.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

@@ -1,4 +1,4 @@
-namespace GAPEvaluation.API.Areas.HelpPage
+namespace GAPEvaluation.Api.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

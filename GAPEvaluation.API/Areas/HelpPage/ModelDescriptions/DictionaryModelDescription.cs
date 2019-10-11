@@ -1,4 +1,4 @@
-namespace GAPEvaluation.API.Areas.HelpPage.ModelDescriptions
+namespace GAPEvaluation.Api.Areas.HelpPage.ModelDescriptions
 {
     public class DictionaryModelDescription : KeyValuePairModelDescription
     {

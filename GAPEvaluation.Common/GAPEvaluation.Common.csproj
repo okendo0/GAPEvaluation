@@ -65,10 +65,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GAPEvaluation.API\GAPEvaluation.API.csproj">
-      <Project>{6b42202d-f045-47e4-8333-1ea25d8e1ea4}</Project>
-      <Name>GAPEvaluation.API</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GAPEvaluation.Domain\GAPEvaluation.Domain.csproj">
       <Project>{2fb2fd08-cf7d-4863-9416-27d5f9a70539}</Project>
       <Name>GAPEvaluation.Domain</Name>

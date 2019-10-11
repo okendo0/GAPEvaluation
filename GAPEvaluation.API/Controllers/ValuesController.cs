@@ -5,9 +5,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace GAPEvaluation.API.Controllers
+namespace GAPEvaluation.Api.Controllers
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values

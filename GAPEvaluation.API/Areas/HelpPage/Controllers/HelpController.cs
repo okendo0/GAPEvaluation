@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using GAPEvaluation.API.Areas.HelpPage.ModelDescriptions;
-using GAPEvaluation.API.Areas.HelpPage.Models;
+using GAPEvaluation.Api.Areas.HelpPage.ModelDescriptions;
+using GAPEvaluation.Api.Areas.HelpPage.Models;
 
-namespace GAPEvaluation.API.Areas.HelpPage.Controllers
+namespace GAPEvaluation.Api.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

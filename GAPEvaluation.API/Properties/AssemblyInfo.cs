@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GAPEvaluation.API")]
+[assembly: AssemblyTitle("GAPEvaluation.Api")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GAPEvaluation.API")]
+[assembly: AssemblyProduct("GAPEvaluation.Api")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2b231ded-2956-48ce-abb0-c8f2dd72ef9b")]
+[assembly: Guid("6e66a2a4-c0cf-4206-ab94-de5a0a327943")]
 
 // Version information for an assembly consists of the following four values:
 //

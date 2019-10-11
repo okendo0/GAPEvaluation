@@ -1,23 +1,26 @@
-﻿namespace GAPEvaluation.Controllers
-{
-    using System.Data.Entity;
-    using System.Net;
-    using System.Threading.Tasks;
-    using System.Web.Mvc;
-    using Common.Repository;
-    using Domain.Models;
-    using Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using GAPEvaluation.Domain.Models;
+using GAPEvaluation.Models;
 
+namespace GAPEvaluation.Controllers
+{
     public class PoliciesController : Controller
     {
         private LocalDataContext db = new LocalDataContext();
-        PolicyRepository policyRepository = new PolicyRepository();
 
         // GET: Policies
         public async Task<ActionResult> Index()
         {
-            return View(await db.Policies.ToListAsync());
-            //return View(await policyRepository.GetPolicies());
+            var policies = db.Policies.Include(p => p.Coverage);
+            return View(await policies.ToListAsync());
         }
 
         // GET: Policies/Details/5
@@ -38,6 +41,7 @@
         // GET: Policies/Create
         public ActionResult Create()
         {
+            ViewBag.IdCoverage = new SelectList(db.Coverages, "IdCoverage", "Name");
             return View();
         }
 
@@ -46,7 +50,7 @@
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "IdPolicy,Name,Description")] Policy policy)
+        public async Task<ActionResult> Create([Bind(Include = "IdPolicy,Name,Description,IdCoverage")] Policy policy)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +59,7 @@
                 return RedirectToAction("Index");
             }
 
+            ViewBag.IdCoverage = new SelectList(db.Coverages, "IdCoverage", "Name", policy.IdCoverage);
             return View(policy);
         }
 
@@ -70,6 +75,7 @@
             {
                 return HttpNotFound();
             }
+            ViewBag.IdCoverage = new SelectList(db.Coverages, "IdCoverage", "Name", policy.IdCoverage);
             return View(policy);
         }
 
@@ -78,7 +84,7 @@
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "IdPolicy,Name,Description")] Policy policy)
+        public async Task<ActionResult> Edit([Bind(Include = "IdPolicy,Name,Description,IdCoverage")] Policy policy)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +92,7 @@
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+            ViewBag.IdCoverage = new SelectList(db.Coverages, "IdCoverage", "Name", policy.IdCoverage);
             return View(policy);
         }
 

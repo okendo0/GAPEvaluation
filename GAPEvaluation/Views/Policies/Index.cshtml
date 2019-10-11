@@ -1,16 +1,19 @@
 ﻿@model IEnumerable<GAPEvaluation.Domain.Models.Policy>
 
 @{
-    ViewBag.Title = "List of Policies";
+    ViewBag.Title = "Index";
 }
 
-<h2>@ViewBag.Title</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Coverage.Name)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -22,6 +25,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Coverage.Name)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>

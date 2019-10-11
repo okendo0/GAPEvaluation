@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace GAPEvaluation.API.Areas.HelpPage.ModelDescriptions
+namespace GAPEvaluation.Api.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterDescription
     {

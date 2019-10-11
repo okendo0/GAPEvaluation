@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace GAPEvaluation.API
+namespace GAPEvaluation.Api
 {
     public class FilterConfig
     {

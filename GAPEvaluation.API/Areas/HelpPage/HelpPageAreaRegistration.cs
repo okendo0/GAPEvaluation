@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace GAPEvaluation.API.Areas.HelpPage
+namespace GAPEvaluation.Api.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {
